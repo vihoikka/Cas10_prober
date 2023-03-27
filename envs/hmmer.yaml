@@ -1,0 +1,6 @@
+channels:
+  - bioconda
+dependencies:
+  - hmmer
+  - pandas
+  - seqkit
