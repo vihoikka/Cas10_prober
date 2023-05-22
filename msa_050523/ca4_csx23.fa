@@ -1,0 +1,390 @@
+>Query_96110 unnamed protein product
+----------M-------GEF-FMSA-----------I------TYMDY--------VTI
+IFAFATMFAVF------WQWYFRRKDNNEITIYID--KDGEKNE---LP-IKILRKNISR
+AEVFGILGALH---TGQQWSIKYTSTVE----FMQDILQIQLY-KKDFLEIK----LTS-
+-----------------NDNFQTDI-DYL------------------
+>ref|WP_075494296.1| hypothetical protein [Campylobacter geochelonis]
+----------M-------GEF-FMSA-----------I------TYMDY--------VTI
+IFAFATMFAVF------WQWYFRRKDNNEITIYID--KDGEKNE---LP-IKILRKNISR
+AEVFGILGALH---TGQQWSIKYTSTVE----FMQDILQIQLY-KKDFLEIK----LTS-
+-----------------NDNFQTDI-DYL------------------
+>ref|WP_075531260.1| hypothetical protein [Campylobacter geochelonis]
+----------M-------GEF-FMSA-----------I------TYMDY--------ITI
+IFAFATMFAVF------WQWYFRRKDNNEITIYID--KDGEKNE---LP-IKILRKNISR
+AEVFGILGALH---TGQQWSIKYTSTVE----FMQDILQIQLY-KKDFLEIK----LTS-
+-----------------NDNFQTDI-DYL------------------
+>ref|WP_269491105.1| hypothetical protein [Campylobacter ureolyticus]
+----------M---------F-FTTI-----------I------TYLDY--------ITI
+IFAFFAMMASG------YNFFARRKELKEIEIYIV--IDGVKKL---IP-IKIARKNVTR
+AEIKGIMSDFD---KDHNYTINYLKSSK----FMNDIFLVQKG-KKNNLTIE----ILS-
+-----------------QDKFDLDDRDFYNI----------------
+>ref|WP_154571137.1| hypothetical protein [Campylobacter portucalensis]
+-------------------MFNFNNI-----------I------TYLDY--------ITI
+IFAFCAMFASG------YNLFSRRKDMEEIEIFII----NKDKK-IKLP-IRILRKNITR
+AEIKGIVSDFE---KDHNFTISYLKSPE----FLNDIFLIQKG-KKDVLVIE----IKEY
+------------------DKFDFNENDM-LIKDLNESNHDFRDAIDK
+>ref|WP_269493268.1| hypothetical protein [Campylobacter ureolyticus]
+----------M---------F-FTTI-----------I------TYLDY--------ITI
+IFAFFAMMASG------YNFFARRKELKEIEIYIV--IDGVKKL---IP-IKIARKNVTR
+EEIKGIMSDFD---KDHNYTINYLKSSK----FMNDIFLVQKG-KKNDLTIE----ILS-
+-----------------QDKFDLDDRDFYNI----------------
+>gb|MBP3676205.1| hypothetical protein [Campylobacter sp.]
+ME-------IL-------KET--IEF-----------I------EILDY--------VTI
+VFAFFAMIGTF------INFFYRRKDSKLIKIYIQF-PDGSRRL---VP-YHITRRNFTR
+SELFGILRAID---KEGSFNIKYTSTPE----FFDDVLQVQKG-KRDEITIR----LET-
+-----------------DDKFNWTE-----I----------------
+>gb|MBQ7134782.1| hypothetical protein [Campylobacter sp.]
+ME-------IL-------KET--IEF-----------I------EFLDY--------ITI
+VFAFFAMIGTF------VNFFYRRKDSKLIKIYIKF-PDNSTRL---VP-YHITRRNFTR
+SELFGILRAID---KEGSFNIKYTSTPE----FFDDVLQVQKG-KSDEITIR----LET-
+-----------------DDKFSWA-----------------------
+>ref|WP_086255616.1| MULTISPECIES: hypothetical protein [unclassified Campylobacter]
+ME-------IL-------KET--IEF-----------I------EFLDY--------ITI
+VFAFFAMIGTF------VNFFYRRKDSKLIKIYIKF-PDNSTRL---VP-YHITRRNFTR
+SELFGILRAID---KEGSFNIKYTSTPE----FFDDVLQVQKG-KSDEITIR----LET-
+-----------------DDKFSWAE-----I----------------
+>gb|MBR2221468.1| hypothetical protein [Campylobacter sp.]
+ME-------IL-------KET--IEL-----------I------EILDY--------VTI
+VFAFFAMIGTF------VNFFYRRKDSKLIKIYIKF-PDSSTKL---VP-YHITRRNFTR
+SELFGILRAID---KEGSFNIKYTSTPE----FFDDVLQVQKG-KSDEIAIR----LET-
+-----------------DDKFSWA-----------------------
+>gb|MBO7155264.1| hypothetical protein [Campylobacter sp.]
+ME-------IL-------KET--IEL-----------I------EILDY--------VTI
+VFAFFAMIGTF------INFFYRRKDSKLIKIYIQF-PDGSRRL---VP-YHITRRNFTR
+SELFEILRAID---NDENFKIKHTYTPE----FFDDVLQVQKG-KSDEITIK----LET-
+-----------------NDKFNWAY-----I----------------
+>ref|WP_086254387.1| hypothetical protein [Campylobacter sp. RM8966]
+ME-------IL-------KET--IEF-----------I------EFLDY--------ITI
+VFAFFAMIGTF------VNFFYRRKDSKLIKIYIKF-PDNSTKL---VP-YHITRRNFTR
+SELFGILRAID---KEGSFNIRYTSTPE----FFDDVLQVQKG-KSDEITIR----LET-
+-----------------DDKFNWA-----------------------
+>gb|MBR2164023.1| hypothetical protein [Campylobacter sp.]
+ME-------IL-------KET--IEF-----------I------EFLDY--------VTI
+VFAFFAMIGTF------INFFYRRKDSKLIKIYIQF-PDGSRRL---VP-YHITRRNFTR
+SELFEILRAID---NNENFNIKHTYTPE----FFDDVLQVQKG-KSDEITIR----LET-
+-----------------DDKFNWT-----------------------
+>gb|MBP3674949.1| hypothetical protein [Campylobacter sp.]
+ME-------IL-------KET--IEF-----------I------EFLDY--------ITI
+VFAFFAMIGTF------VNFFYRRKDSKLIKIYIKF-PDNSTKL---VP-YHITRRNFTR
+SELFGILRAID---KEENFKIKYISTPE----FFDDVLQVQKG-KSDEITIR----LET-
+-----------------DDKFSWA-----------------------
+>gb|MBR2918309.1| hypothetical protein [Campylobacter sp.]
+ME-------IL-------KET--IEF-----------I------EFLDY--------VTI
+VFAFFAMIGTF------INFFYRRKDSKLIKIYIQF-PDGSIRL---AP-YHITRRNFTR
+SELFEILRAID---NNENFSIKHTYTPE----FFDDVLQVQKG-KSDEITIR----LET-
+-----------------DDKFNWA-----------------------
+>gb|MBR6612404.1| hypothetical protein [Campylobacter sp.]
+ME-------IL-------KET--IEF-----------I------EFLDY--------VTI
+VFAFFAMIGTF------VNFFYRRKDSKLIKIYIKF-PDNSTRL---VP-YHITRRNFTR
+SELFGILRAID---NNENINIKHTYTPE----FFDDVLQVQKG-KSDEITIR----LET-
+-----------------DDKFNWA-----------------------
+>ref|WP_065828330.1| hypothetical protein [Helicobacter pullorum]
+------------------MEM-ILVI-----------L------DYLDK--------FTI
+IAATFAAVFSI------IGFYKRRKDNDLIRIIIE------DKE---MP-IRILRKQISR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>gb|MBE6429657.1| hypothetical protein [Campylobacter sp.]
+ME-------IL-------KET--IEF-----------I------EFLDY--------ITI
+VFAFFAMIGTF------VNFFYRRKDSKLIKIYIKF-PDNSTRL---VP-CHITRRNFTR
+SELFGILRAIN---KEESFKIKYTSTRE----FFDDVLQVQKG-KSDEITIRNVGKSLL-
+-----------------INSLSGAK-----G----------------
+>ref|WP_060662822.1| hypothetical protein [Helicobacter pullorum]
+------------------MEI-ILMI-----------L------DYLDK--------FTI
+IMAAFAAVFSG------IGFYKRRKDNDLIRIIIE------DKE---MP-IRILRKQISR
+AEVYGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>ref|WP_143421779.1| hypothetical protein [Helicobacter pullorum]
+MN-------LYKLFRRVDVEM-ILVI-----------L------DYLDK--------FTI
+IAATFAAVFSI------IGFYKRRKDNDLIRIIIE------DKE---MP-IRILRKQISR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>ref|WP_104745559.1| hypothetical protein [Helicobacter pullorum]
+------------------MEI-ILMI-----------L------DYLDK--------FTI
+IVAAFAAVFSG------IGFYKRRKDNDLIRIIIE------DKE---MP-IRILRKQISR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKISRG-KLDCLEIP----FIK-
+-----------------GDVFEYKE----SVA---------------
+>ref|WP_060661282.1| hypothetical protein [Helicobacter pullorum]
+------------------ME----MI-----------L------DYLDK--------FTI
+IVATFAAVFSG------ISFYKRRKDNDLIRIIIE------DKE---MP-IRILRKQVSR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYEE----TLR---------------
+>ref|WP_112058073.1| hypothetical protein [Helicobacter sp. 11-8110]
+------------------MES-FSGI-----------I---DVLDVITI-------LFST
+LTLVFVVINFF------YNLYARKKENQLIKILII--KDGVEKQ---LP-IGIPRKQISR
+SEVLGMLGVFD---KQSYFEIAYTSKKE----FFDQITEIQNN-KKDVLKIY----LRP-
+-----------------NDKFDCSL----------------------
+>ref|WP_250608160.1| hypothetical protein [Helicobacter colisuis]
+------------------MES-FSGI-----------I---DVLDVITI-------LFST
+LTLVFVVINFF------YNLYARKKENQLIKILII--KDGVEKQ---LP-IGIPRKQISR
+SEVLGMLGVFD---KQSYFEIAYTSKKE----FFDQITEIQNN-KKDVLRIY----LQP-
+-----------------NDKFDCSL----------------------
+>gb|MBR4097904.1| hypothetical protein [Campylobacter sp.]
+ME-------IL-------KET--IEL-----------I------EILDY--------VTI
+VFAFFAMIGTF------VNFFYRRKDSKLIKIYIKF-PDNSTRL---VP-YHITRRNFTR
+SELFEILRAID---KEESFKIKYISMPE----FFDDVLQVQKG-KSDEITIR----LET-
+-----------------DDKFSWAE-----I----------------
+>ref|WP_129013802.1| hypothetical protein [Arcobacter cloacae]
+--------------------MEFEKV-----------I------TWMDW--------VTI
+IFSFFAMFFAFK------NWWNNKKQLKPIQIIIDK---NGEKES--LP-FEIMRKNLTR
+SEIFGVLGACD---KDSKFDIKYTASRD----FFRQVSEVQES-KRDEIIIY----LKET
+------------------DKFDWIKE---------------------
+>ref|WP_258108572.1| hypothetical protein [Campylobacter lari]
+------------------MEI-FKLM-----------I------EILDQ--------CTI
+VFSFITMLIVV------LSFKQKLKENNEITIILQ--TNSQSKT---LP-VKILRRNFTR
+AELLGYLGIYN-N-STQNFNIAYLTEPQ----FMQDVLNIQKG-KANLITIF----IRE-
+-----------------DDKHALL-----------------------
+>ref|WP_260937149.1| hypothetical protein [Aliarcobacter butzleri]
+------------------MNE-FILW-----------F-GGNEWTFIDG-------IVTI
+LTLGLVF----------WNWYQNYVQNKQIKIYIL--HNNVKTM---LP-IKLIRKNITR
+AEINGILGAFD---KDSKFCIAHTSSVE----FFEDIENIQNG-KSNEICIV----ITE-
+-----------------NDKFDRVN-----I----------------
+>ref|WP_054195126.1| hypothetical protein [Helicobacter pullorum]
+------------------MEM-ILVI-----------L------DYLDK--------FTI
+IAAAVAAIFSI------IGFYKRRKDNDLIRIIIE------DKE---MP-IRILRKQVSR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>ref|WP_260911111.1| hypothetical protein [Aliarcobacter butzleri]
+MQKDYLKCQYLNIEGLENMNE-FILW-----------F-GGNEWTFIDG-------IVTI
+LTLGLVF----------WNWYQNYVQNKQIKIYIL--HNNVKTM---LP-IKLIRKNITR
+AEINGILGAFD---KDSKFCIAHTSSVE----FFEDIENIQNG-KSNEICIV----ITE-
+-----------------NDKFDRVN-----I----------------
+>ref|WP_115056622.1| hypothetical protein [Helicobacter pullorum]
+-----------------------MVI-----------L------DYLDK--------FTI
+IAAAVAAIFSI------IGFYKRRKDNDLIRIIIE------DKE---MP-IRILRKQISR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>ref|WP_263675316.1| hypothetical protein [Campylobacter sp. FU_497]
+------------------MEI-FKLM-----------I------EILDQ--------CTI
+VFSFITMLIVV------LSFKQKLKENNEITIILQ--TNSQSKT---LP-VKILRRNFTR
+AELLGYLGIYN-N-STQNFNIAYLTEPQ----FMQDVLNIQKG-KANSITIF----IRE-
+-----------------DDKHVLL-----------------------
+>ref|WP_087685584.1| hypothetical protein [Campylobacter lari]
+------------------MEI-FKLM-----------I------EILDQ--------CTI
+VFSFITMLIVV------LSFKQKLKENNEITIILQ--TNSQSKT---LP-VKILRRNFTR
+AELLGYLGIYN-N-STQNFNIAYLTEPQ----FMQDVLNIQKG-KANSITIF----IRE-
+-----------------DDKHALL-----------------------
+>ref|WP_143421929.1| hypothetical protein [Helicobacter pullorum]
+-----------------------MVI-----------L------DYLDK--------FTI
+IAAAVAAIFSI------IGFYKRRKDNDLIRIIIE------DKE---MP-IRILRKQVSR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>ref|WP_260949476.1| hypothetical protein [Aliarcobacter cryaerophilus]
+------------------MNE-FILW-----------F-GGNEWTFIDG-------IVTI
+LTLGLVF----------WNWYQNYVQNKQIEIYIL--HNNVKTM---LP-IKLIRKNFTR
+AEINGILGAFD---KDSKFCIAHTSSVE----FFEDIENIQNG-KSNEICIP----ITE-
+-----------------NDKFDRVN-----I----------------
+>ref|WP_138154334.1| hypothetical protein [Aliarcobacter cibarius]
+------------------MNE-FILW-----------F-GGNEWTFIDG-------IVTI
+LTLGLVF----------WNWYQNYIQNKQIEIYIL--HNNVKTR---LP-IKLIRKNFTR
+AEINGILGAFD---KDSKFCIAHTSSVE----FFEDIENIQNG-KSNEICIV----ITE-
+-----------------NDKFDRVN-----I----------------
+>ref|WP_087700541.1| hypothetical protein [Campylobacter lari]
+------------------MEI-FKLM-----------I------EILDQ--------CTI
+VFSFITMLIVV------LSFKQKLKENNEITIILQ--TNSQSKT---LP-VKILRRNFTR
+AELLGYLGIYN-N-STQNFNIAYLTEPQ----FMQDVLNIQKG-KANSITIF----IRE-
+-----------------YDKHALL-----------------------
+>emb|STQ87370.1| Uncharacterised protein [Helicobacter pullorum]
+--------------------M-ILVI-----------L------DYLDK--------FTI
+IAAAVAAIFSI------IGFYKRRKDNDLIRIIIE------DKE---MP-IRILRKQISR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>ref|WP_257910608.1| hypothetical protein [Campylobacter lari]
+------------------MEI-FKLM-----------I------EILDQ--------CTI
+VFSFITMLIVV------LSFKQKLKENNEITIILQ--TNLQSKT---LP-VKILRRNFTR
+AELLGYLGIYN-N-STQNFNIAYLTEPQ----FMQDVLNIQKG-KANSITIF----IRE-
+-----------------DDKHALL-----------------------
+>ref|WP_143421706.1| hypothetical protein [Helicobacter pullorum]
+MN-------LYKLFRRVDREM-ILVI-----------L------DYLDK--------FTI
+IAAAVAAIFSI------IGFCKRRKDNDLIRIIIE------DKE---MP-IRILRKQISR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----TLR---------------
+>ref|WP_144049251.1| hypothetical protein [Helicobacter pullorum]
+-----------------------MVI-----------L------DYLDK--------FTI
+IAAAVAAVFSI------IGFCKRRKDNDLIRIIIE------DKE---MP-IRILRKQISR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>gb|OCR21360.1| hypothetical protein BA917_00140 [Helicobacter pullorum]
+--------------------M-ILVI-----------L------DYLDK--------FTI
+IAAAVAAIFSI------IGFCKRRKDNDLIRIIIE------DKE---MP-IRILRKQISR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----TLR---------------
+>gb|MBO7381403.1| hypothetical protein [Neisseriaceae bacterium]
+-----------------------MEI-----------I------DTLNK--------ITI
+CFAFIIMILTIIGWGS--SFYQYRKMKQEISIVIIK--NGIPKT---LP-ITLLRKNFTR
+AELMGVLGIYD---KNHKFDIYHTTQKE----FFDDIHAIQLG-KKDKIFIR----ISE-
+-----------------NDKFDFHFPQA-------------------
+>ref|WP_065827659.1| hypothetical protein [Helicobacter pullorum]
+--------------------M-ILVI-----------L------DYLDK--------FTI
+IAAAVAAVFSI------IGFCKRRKDNDLIRIIIE------DKE---MP-IRILRKQISR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>ref|WP_179853937.1| hypothetical protein [Helicobacter pullorum]
+MN-------LYKLFRRVDREM-ILVI-----------L------DYLDK--------FTI
+IAAAVAAVFSI------IGFCKRRKDNDLIRIIIE------DKE---MP-IRILRKQVSR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>gb|OCR15842.1| hypothetical protein BA916_04500 [Helicobacter pullorum]
+--------------------M-ILVI-----------L------DYLDK--------FTI
+IAAAVAAVFSI------IGFCKRRKDNDLIRIIIE------DKE---MP-IRILRKQVSR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>ref|WP_134044165.1| hypothetical protein [Helicobacter pullorum]
+------------------------MI-----------L------DYLDK--------FTI
+IAAAVAAVFSI------IGFCKRRKDNDLIRIIIE------DKE---MP-IRILRKQVSR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----TLR---------------
+>gb|MBR2917499.1| hypothetical protein [Campylobacter sp.]
+------------------------------------------------------------
+------MIGTF------VNFFYRRKDSKLIKIYIKF-PDNSTRL---VP-YHITRRNFTR
+SELFGILRAID---NNENINIKHTYTPE----FFDDVLQVQKG-KSDEITIR----LET-
+-----------------DDKFNWA-----------------------
+>gb|OHE05242.1| MAG: hypothetical protein A2345_12635 [Sulfurimonas sp. RIFOXYB12_FULL_35_9]
+------------------MEI-IESI-----------I------SILDI--------ITI
+FFATITMLAVL------WNWYKNKKSNDKIVIYFQ--TQTETIL---LKNISIIRKHITR
+SEVLGILGVVQKN-SKERYNIAYLSQTR----FFNDLYDIQTS-KSDKLVIE----ITD-
+-----------------EELEQFDITK--------------------
+>gb|MCK9162436.1| hypothetical protein [Arcobacteraceae bacterium]
+---------------------MFDDF-----------I------YWVNV--------VTV
+LFSGAAMVFSGK------NLRHNRKLAEHIPVYIEK---NGKKEY--LD-LEIIRKDFNR
+SELFGILGSLE---KSGKFDIEYFSSKK----FYKQLSDLQKS-KKDEFVIY----LKD-
+-----------------SDRFERK-----------------------
+>gb|EEQ63196.1| hypothetical protein HPMG_00653 [Helicobacter pullorum MIT 98-5489]
+------------------------------------------------------------
+-----------------------------------------------MP-IRILRKQISR
+AEVCGILGSLH---SGDKYNIAYLKNPE----FFKKINKIGRG-KLDCLEIP----LIK-
+-----------------GDVFEYKE----ALR---------------
+>gb|RLA78788.1| hypothetical protein DRG78_14300 [Epsilonproteobacteria bacterium]
+------------------MSE-LMKW-----------FKSSDIWASVDAGFTIVSIIITF
+GTFIMVI----------KNYLNNKKQTDKIEIIIN--RNNCLET---LP-TFVLRKDFTR
+SEVFGILGALD---SNSKFDIKYTSDAQ----FIENIFNIQKG-VGKELIIK----IED-
+-----------------EDKFDWHS-----K----------------
+>ref|WP_237020921.1| hypothetical protein [Helicobacter cinaedi]
+-----------------------MGF-----------I---DVLNIIST-------LISL
+GTFGIVA-------------YRFGRDNHKISIIIH--RDNLEQE---IP-IKILRKQVTR
+SEILGILGTLD---RESNFSIAYTGQKA----FFDNIVAVQSGWRANKIHIY----IQP-
+-----------------GDKFNYAL----------------------
+>gb|TLD92320.1| hypothetical protein LS74_005725 [Helicobacter magdeburgensis]
+-------------------------------------M---DVLNIIST-------LISL
+GTFGIVA-------------YRFGRDNHKISIIIH--RDNLEQE---IP-IKILRKQVTR
+SEILGILGTLD---RESNFSIAYTGQKA----FFDNIVAVQSGWRANKIHIY----IQP-
+-----------------GDKFNYAI----------------------
+>ref|WP_236096832.1| hypothetical protein [Helicobacter magdeburgensis]
+-----------------------MGF-----------I---DVLNIIST-------LISL
+GTFGIVA-------------YRFGRDNHKISIIIH--RDNLEQE---IP-IKILRKQVTR
+SEILGILGTLD---RESNFSIAYTGQKA----FFDNIVAVQSGWRANKIHIY----IQP-
+-----------------GDKFNYAI----------------------
+>gb|MBR2917665.1| hypothetical protein [Campylobacter sp.]
+------------------------------------------------------------
+-------------------------DSKLIKIYIKF-PDNSTRL---VP-YHITRRNFTR
+SELFGILRAID---KEENFKIKYISTPE----FFDDVLQVQKG-KSDEITIR----LET-
+-----------------DDKFNWA-----------------------
+>ref|WP_104717118.1| hypothetical protein [Helicobacter cinaedi]
+-------------------------------------------MNIIST-------FISL
+GTFGIVA-------------YRFGRDNHKISIIIH--RDSLEQE---IP-IKILRKQVTR
+SEILGILGTLD---RESNFSIAYTGEKE----FFDNMVAVQSGWRARKIHIY----IQE-
+-----------------GDKFNYAL----------------------
+>ref|WP_233705488.1| hypothetical protein [Helicobacter cinaedi]
+-----------------------MGF-----------I---DALNIIST-------LISL
+GTFGIVA-------------YRFGRDNHKISIIIH--RDDLEQE---IP-IKILRKQVSR
+SEILGILGTLD---RESNFSIAYTGQKA----FFDNIVAVQSGWWANKIHIY----IQP-
+-----------------GDKFNYAI----------------------
+>ref|WP_002955680.1| hypothetical protein [Helicobacter cinaedi]
+-------------------------------------------MNIIST-------FISL
+GTFGIVA-------------YRFGRDNHKISIIIH--RDNLEQE---IP-IKILRKQVTR
+SEILGILGTLD---RESNFSIAYTGEKA----FFDNMVAVQSGWRARKIHIY----IQE-
+-----------------GDKFNYAL----------------------
+>ref|WP_260891497.1| hypothetical protein [Aliarcobacter cryaerophilus]
+------------------MDE-FMLW-----------F-GGDTWTFIDA-------LVTI
+LTLLLVL----------YNWYQNYKQNQEIRIQIVLQHMNITKV---LP-IPLIRKNFTR
+SELFGILGAYD---KDSKFCIEHTSSIK----FFEDIRNIQEG-KLDEISII----IKK-
+-----------------EDKFDMVN-----L----------------
+>ref|WP_148571938.1| MULTISPECIES: hypothetical protein [Aliarcobacter]
+------------------MDE-FMLW-----------F-GGDTWTFIDA-------LVTI
+LTLLLVI----------YNWYQNYKQNQEIRIQIVLQHMNITKV---LP-IPLIRKNFTR
+SELFGILGAYD---KDSKFCIEHTSSIK----FFEDIRNIQEG-KLDEISII----IKK-
+-----------------EDKFDMVN-----L----------------
+>ref|WP_147542876.1| hypothetical protein [Campylobacter fetus]
+MDKNS-SCKCLKNIIDKFKRLRNIAIFLVVIIIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFEDIKNVQDV-KENKITIF----VDSS
+KPTIDKSDDEPITNKEGNDKFDWEPNDS-SMTELL------------
+>gb|EGK8184749.1| hypothetical protein [Campylobacter fetus]
+--------------------------------------------------YRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFENIKNVQDV-KENKITIF----VDSS
+KPTIDKSDDEPITNKEGNDKFDWEPNDS-SMTELL------------
+>ref|WP_099032927.1| hypothetical protein [Campylobacter fetus]
+MDKNS-SCKCLKNIIDKFKRLRNIAIFLVVIIIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFENIKNVQYV-KENKITIF----VDSS
+KPTIDKSDDEPITNKEGNDKFDWEPNDS-SMTELL------------
+>gb|EBD1729438.1| hypothetical protein [Campylobacter fetus]
+-------------------------------IIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFENIKNVQDV-KENKITIF----VDSS
+KPTIDKSDDEPITNKEGNDKFDWEPNDS-SMTELL------------
+>ref|WP_120655535.1| hypothetical protein, partial [Campylobacter fetus]
+-----------------------IAIFLVVIIIGLIYI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFENIKNVQDV-KENKITIF----VDSS
+KPTIDKSDDEPITNKEGNDKFDWEPNDS-SMTELL------------
+>ref|WP_144685992.1| hypothetical protein [Campylobacter fetus]
+MDKNS-SCKCLKNIIDKFKRLRNIAIFSVVIIIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKKLKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFENIKNVQDV-KENKITIF----VDSS
+KPTIDKSDDEPITNKEGNDKFDWEPNDS-SMTELL------------
+>ref|WP_149897176.1| hypothetical protein, partial [Campylobacter fetus]
+---NS-SCKCLKNIIDKFKRLRNIAIFLVVIIIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFENIKNVQDV-KENKITIF----VDSS
+KPTIDKSDDEPITNKEGNDKFDWEPNDS-SMTELL------------
+>ref|WP_251148759.1| unnamed protein product [Campylobacter fetus]
+MDKNS-SCKCLKNIIDKFKRLRNIAIFSVVIIIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFENIKNVQDV-KENKITIF----VDSS
+KPTIDKSDDEHITNKEGNDKFDWEPNDS-SMTELL------------
+>ref|WP_042960541.1| unnamed protein product [Campylobacter fetus]
+MDKNS-SCKCLKNIIDKFKRLRNIAIFSVVIIIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFENIKNVQDV-KENKITIF----VDSS
+KPTIDKSDDEPITNKEGNDKFDWEPNDS-SMTELL------------
+>ref|WP_002850746.1| hypothetical protein [Campylobacter fetus]
+MDKNS-SCKCLKNIIDKFKRLRNIAIFLVVIIIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFENIKNVQDV-KENKITIF----VDSS
+KPTIDKSDDEPITNKEGNDKFDWEPNDS-SMTELL------------
+>ref|WP_185860404.1| hypothetical protein [Campylobacter fetus]
+MQM-------LKNIIDKFKRLRNIAIFLVVIIIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKE----FFENIKTYKT------------------
+-----------------------------------------------
+>ref|WP_119071505.1| hypothetical protein [Aggregatilinea lenta]
+-------------------------------------------MEWLGY-FADVIGIFGA
+VFALFGWRQARQ--VRQELESEKNRQNKKVTVVLQC---GADRLE--LP-IELRRVELTR
+AEVLGRIGMLPMKVKGQRFSLDYVSTIE----FARQISQIIEGEGDALLTIP----CEK-
+-----------------QELDQFDVTRRRA-----------------
+>gb|NPA13951.1| hypothetical protein [Aquificae bacterium]
+MIVNLIRWFFMKHHWEKYKPL--ILFGVITVILTLIGV--CSDFCSKGKLLWDFSSIVDT
+ATAIALAVLAA------IAYFEYAKGEDEIKIYLDV--EGEKKD---TQ-LRLLRKDVSR
+GEVLGILGMIQNK-NSGRFENSKFRNKEILLEFLNNIMEVQKG-NRDEIVVP----ISK-
+-----------------EDFEKYFSEYF-NKS---------------
+>ref|WP_187759135.1| hypothetical protein [Campylobacter fetus]
+MDKNS-SCKCLKNIIDKFKRLRNIAIFLVVIIIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKN----FLK------I------------------
+-----------------------------------------------
+>gb|MCK6579415.1| hypothetical protein [Anaerolineae bacterium]
+-------------------------------------------MEAIGV-IADFIGIAGA
+VFALFAWLQARR--LRETIERENERRNRKVTVVLQS---GGRRVE--LP-VEMRRAELSR
+AEILGRIGMIPMREKGARFSLSYLHTPE----FWRQINQVLESEQDALLTIP----CTD-
+-----------------DELKQFDLPR--------------------
+>gb|MCA9950721.1| hypothetical protein [Anaerolineales bacterium]
+-------------------------------------MDLQNITFYMGLIAD------TI
+AIIGIPYTAWQLYRARQ----KEKQMQQEISIRLDC---SDTNQSIQLP-IKIKRQNFTR
+AEILGYLGMAV-K-EGDRFNLNYLKTAD----FFQELKRIQDADRPETLIIP-CG-IMEN
+G-----------TNEI--DQFANPKSQIINLKS--------------
+>ref|WP_191095310.1| hypothetical protein [Campylobacter fetus]
+MDKNS-SCKCLKNIIDKFKRLRNIAIFSVVIIIGLISI-TLYKESVLTELYRDLNTVCGV
+ALAVIAFIAYI------EISKELKESNQEIDIFIEKIDKNGIKKKFKLP-ITIKRKYFTR
+AELLGILGGFH---SKPHYSIRYTTKKR----IF--------------------------
+-----------------------------------------------
