@@ -1,6 +1,8 @@
 channels:
   - bioconda
 dependencies:
-  - hmmer
+  - hmmer=3.3.2
   - pandas
   - seqkit
+  - biopython
+  - gffutils
