@@ -66,6 +66,7 @@ db = gffutils.create_db(gff_file,
                         merge_strategy='merge', 
                         sort_attribute_values=True,
                         id_spec=["protein_id", "Name", "ID"])
+
 #read the database
 print("Reading database from " + str(db_path) + ".db")
 db = gffutils.FeatureDB(db_path + ".db", keep_order=True)
@@ -149,7 +150,7 @@ if mode == "post_hmm":
     #check if hmm result exists
     print("Checking if hmm result exists")
     if (os.stat(hmm_rows).st_size == 0):
-        print("No cA info found. This an interesting locus.")
+        print("No cA info found. This is an interesting locus.")
         results = {}
         results.update(effector_dict_binary) #this contains the cOAs. Everything is false by default
         results.update(effector_precise) #this contains the effector itself
