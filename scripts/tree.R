@@ -94,6 +94,8 @@ p2 <- gheatmap(p2, info[c("CorA.y")], offset=0.3, width=0.04,colnames = FALSE) +
   scale_fill_manual(values=c("grey90", "red"), name="CorA") 
 #p2
 
+p2 <- open_tree(p2, 5)
+
 plot_path <- paste("data/",project,"/plots/",project,"_Cas10_branchslengths.png", sep = "")
 ggsave(plot_path, plot = p2, width = 8, height = 8)
 
