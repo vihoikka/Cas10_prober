@@ -9,10 +9,14 @@ import traceback
 '''
 This version only uses CCTyper outputs to infer Cas and CorA protein associations.
 The CCTyper outputs must be formatted to only include this one specific locus.
+
+This version incorporates the HD domain search. HD domains are searched for in the Cas10 protein
+and within the first 5 to 30 residues.
 '''
 
 min_protein_length = 150 #the minimum length of a protein (in bp) when finding the CCTyper annotated proteins from the original .gff
 gene_search_range = 250 #this is the range of nucleotides to search for the gene from the cctyper coordinates
+cas10_min_length = 500 #minimum length in AA of Cas10
 
 #add argparse and as arguments "cctyper", outputs files for the following (use "out" as prefix): Cas10, Cas5, Cas7, CorA, info, folder
 parser = argparse.ArgumentParser()
@@ -57,6 +61,11 @@ gene_search_ranges = {"Cas10" : 300,
                       "Cas7" : 150,
                       "CorA" : 150}
 
+protein_min_lengths = {"Cas10" : 500,
+                    "Cas5" : 150,
+                    "Cas7" : 150,
+                    "CorA" : 150}
+
 #generate a new dictionary called "info_table" using keys from dict_of_genes_to_examine
 info_table = {key: False for key in dict_of_genes_to_examine}
 
@@ -68,6 +77,12 @@ info_table["Locus"] = locus_id
 info_table["Sample"] = sample
 info_table["Cas10_GGDD"] = False
 info_table["Cas10_GGDD_seq"] = ""
+info_table["Cas10_HD"] = False
+info_table["Cas10_DH"] = False
+info_table["Cas10_HD_coord"] = "-"
+info_table["Cas10_DH_coord"] = "-"
+info_table["Cas10_coord"] = "-"
+info_table["Cas10_length"] = 0
 info_table["Unknown_genes"] = False
 info_table["Subtype"] = cas_operons["Prediction"][0]
 
@@ -101,6 +116,20 @@ def getCas10CyclaseDomain(cas10):
     #if the motif is found, but is not exactly "GGDD", return the matched motif
     elif motif_fuzzy:
         return str(motif_fuzzy[0]).strip("][")
+    #if no match is found, return "-"
+    else:
+        return "-"
+
+def getCas10Domain(cas10, domain_sequence):
+    seq = str(cas10)
+    #find the HD domain within the first 5 to 30 residues
+    seq = seq[0:30]
+    #search for "HD" or "DH" in seq and output the coordinates of the match
+    start_index = seq.find(domain_sequence)
+    end_index = start_index + 2
+    #if the motif is found, return the matched motif
+    if start_index != -1:
+        return str(start_index)
     #if no match is found, return "-"
     else:
         return "-"
@@ -182,7 +211,7 @@ info_table = genePresence_dict["info_table"] #update the info table
 positions_of_found_genes = genePresence_dict["positions"] #update the positions
 
 #For each gene that was found, find their positions in the genome and extract as fasta sequences
-#Also do some extra checks for Cas10 (GGDD motif)
+#Also do some extra checks for Cas10 (GGDD and HD motifs)
 print("Genes found: " + str(len(positions_of_found_genes)))
 
 genes_not_found = [] #list to store the genes that were not found even if cctyper found them
@@ -199,15 +228,35 @@ for key, value in positions_of_found_genes.items():
     #get corresponding gene from the gff file and turn it into a SeqRecord object
     try:
         gene_object = getGeneObject(gff, proteins, cas_operons["Contig"][0], start, end)
+        min_protein_length = protein_min_lengths[key]
 
-        #check if the gene is Cas10 and if it contains the GGDD motif
-        if key == "Cas10": info_table = getCas10GGDD(info_table, gene_object.seq)
+        #check if protein length is above threshold
+        if len(gene_object.seq) >= min_protein_length:
 
-        #Write the gene to a fasta file
-        filepath = outputfolder + "/" + locus_id + "_" + key + ".faa"
-        print("Writing file: " + filepath)
-        SeqIO.write(gene_object, filepath, "fasta")
-    #except with error reporting
+        #check if the gene is Cas10 and if it contains the HD motif
+            if key == "Cas10" and len(gene_object.seq):
+                info_table = getCas10GGDD(info_table, gene_object.seq)
+                info_table["Cas10_HD_coord"] = getCas10Domain(gene_object.seq, "HD")
+                if info_table["Cas10_HD_coord"].iloc[0] != "-": #if HD was found
+                    info_table["Cas10_HD"] = True
+
+                info_table["Cas10_DH_coord"] = getCas10Domain(gene_object.seq, "DH") #sometimes HD is flipped as DH
+                if info_table["Cas10_DH_coord"].iloc[0] != "-": #if DH was found
+                    info_table["Cas10_DH"] = True
+
+                info_table["Cas10_length"] = len(gene_object.seq)
+
+            #Write the gene to a fasta file
+            filepath = outputfolder + "/" + locus_id + "_" + key + ".faa"
+            print("Writing file: " + filepath)
+            SeqIO.write(gene_object, filepath, "fasta")
+        #except with error reporting
+
+        else:
+            #break the for loop and continue to the next gene
+            print("Protein " + key + " is too short " + str(len(gene_object.seq)) + ". Skipping")
+            continue
+
     except Exception:
         print("Error when mapping gene coordinates: " + str(traceback.print_exc()))
         print("Could not find gene " + key + " in range: " + str(start) + "-" + str(end))
@@ -217,7 +266,7 @@ for key, value in positions_of_found_genes.items():
 
 
 #write the info table to a tsv file
-info_table.to_csv(info_out, sep="\t", index=False, header = False)
+info_table.to_csv(info_out, sep="\t", index=False, header = True)
 
 #write the genes that were not found to a file
 with open(outputfolder + "/" + locus_id + "_genes_not_found_eventhough_cctyper_found_them.txt", "w") as f:
