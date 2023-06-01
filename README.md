@@ -11,6 +11,6 @@ Snakemake pipeline for characterizing type III CRISPR-Cas loci and related CorAs
 3. Run using the following command
 
 ```
-snakemake --snakefile cas10_cora_9.smk --use-conda --cores 40 --config protein_clustering="False" getGenomesBy="local" genome_mode="all" cas10_anchor="True" --rerun-triggers mtime
+snakemake --snakefile cas10_prober.smk --use-conda --cores 40 --config protein_clustering="False" getGenomesBy="local" genome_mode="all" cas10_anchor="True" --rerun-triggers mtime
 ```
 
