@@ -3,7 +3,7 @@
 # install.packages("phytools")
 # install.packages("shadowtext")
 # install.packages("ggnewscale")
-# install.packages("xlsx")
+ install.packages("xlsx")
 # install.packages("ggrepel")
 # install.packages("ggnewscale")
 
@@ -25,7 +25,7 @@ library("patchwork")
 #### Load files and tidy ####
 
 #define project folder
-project = "run1"
+project = "020623"
 
 #define paths
 cas10_tree_path <- paste("data/",project,"/cas10_tree.txt", sep = "")
@@ -39,8 +39,8 @@ tax_info_path <- paste("data/",project,"/taxInfo.txt", sep = "")
 #open files
 cas10_tree <- read.newick(cas10_tree_path)
 cas10_tree <- midpoint.root(cas10_tree)
-#CorA_tree <- read.newick(CorA_tree_path)
-#CorA_tree <- midpoint.root(CorA_tree)
+CorA_tree <- read.newick(CorA_tree_path)
+CorA_tree <- midpoint.root(CorA_tree)
 CorA_tree_unclustered <- read.newick(CorA_tree_path_unclustered)
 CorA_tree_unclustered <- midpoint.root(CorA_tree_unclustered)
 info <- read.csv(info_path, sep="\t")
@@ -58,18 +58,19 @@ info$Subtype[str_detect(info$Subtype, 'Hybrid') == TRUE & str_detect(info$Subtyp
 info$Subtype[str_detect(info$Subtype, 'Hybrid') == TRUE & str_detect(info$Subtype, 'III-B') == TRUE] <- "III-B"
 info$Subtype[str_detect(info$Subtype, 'Hybrid') == TRUE & str_detect(info$Subtype, 'III-C') == TRUE] <- "III-C"
 info$Subtype[str_detect(info$Subtype, 'Hybrid') == TRUE & str_detect(info$Subtype, 'III-D') == TRUE] <- "III-D"
+colnames(info)[33] <- "CorA"
 
 #merge info with protein specific data
 rownames(info) <- info$Locus #set rownames
 
-infosubset <- subset(info, info$CorA.y == "True")
+infosubset <- subset(info, info$CorA == "True")
 info_unk <- subset(info, info$Unknown_genes == "True")
 
 #set a labeling column where only CorA positives have the sample name
-info$CorALabel <- with(info, ifelse(CorA.y == "False", '', Sample))
+info$CorALabel <- with(info, ifelse(CorA == "False", '', Sample))
 
 #subsets
-info_cora = subset(info, info$CorA.y=="True")
+info_cora = subset(info, info$CorA=="True")
 cora_filepath = "cas10_cora_positives.xlsx"
 write.xlsx(info_cora, cora_filepath, sheetName = "CorA positives", 
            col.names = TRUE, row.names = TRUE, append = FALSE)
@@ -82,35 +83,36 @@ p1 <- ggtree(cas10_tree, layout="circular", size=0.15, open.angle=20, aes(color=
                theme(legend.position = "none") +
                geom_text2(aes(subset=!isTip, label=node), hjust = 2 )) %<+% info
 
-p1 <- gheatmap(p1, info[c("Subtype")], offset=-0.1, width=0.05, colnames = FALSE) + 
+p1 <- gheatmap(p1, info[c("Subtype")], offset=-0.1, width=0.05, colnames = TRUE, colnames_angle=85, colnames_offset_y = 0, font.size = 3, hjust = 1) + 
   scale_fill_manual(values = colorBlindBlack8, name = "Subtype") +
   theme(text = element_text(size = 14))
 
-p1 <- p1 + geom_tiplab2(aes(label="",  subset = CorA.y == "True"), 
-                            align=TRUE, family='mono',
-                            linetype = "dotted", linesize = .2, alpha = 1.0, color = "red")
+p1 <- p1 + geom_tiplab2(aes(label="",  subset = CorA == "True"), 
+                        align=TRUE, family='mono',
+                        linetype = "dotted", linesize = .2, alpha = 1.0, color = "red")
+
 p2 <- p1 + new_scale_fill()
-p2 <- gheatmap(p2, info[c("CorA.y")], offset=0.3, width=0.04,colnames = FALSE) +
+p2 <- gheatmap(p2, info[c("CorA")], offset=0.3, width=0.04,colnames = TRUE, colnames_angle=85, colnames_offset_y = 0, font.size = 3, hjust = 1, legend_title = "CorA") +
   scale_fill_manual(values=c("grey90", "red"), name="CorA") 
 #p2
 
-p2 <- open_tree(p2, 5)
+p2 <- open_tree(p2, 10)
 
 plot_path <- paste("data/",project,"/plots/",project,"_Cas10_branchslengths.png", sep = "")
 ggsave(plot_path, plot = p2, width = 8, height = 8)
 
 #### CorA circular nonclustered ####
 p1_nonclustered <- ggtree(CorA_tree_unclustered, layout="circular", aes(color=Subtype, labels=genus) +
-               theme(legend.position = "none") +
-               geom_text2(aes(subset=!isTip, label=node), hjust = 2 )) %<+% info
+                            theme(legend.position = "none") +
+                            geom_text2(aes(subset=!isTip, label=node), hjust = 2 )) %<+% info
 
 p1_nonclustered <- gheatmap(p1_nonclustered, info[c("Subtype")], width=0.1, colnames = FALSE) + 
   scale_fill_manual(values = colorBlindBlack8, name = "Subtype") +
   theme(text = element_text(size = 14))
 
 p2_nonclustered <- p1_nonclustered + geom_tiplab2(aes(label=""), 
-                        align=TRUE, family='mono',
-                        linetype = "dotted", linesize = .7, alpha = 0.3)
+                                                  align=TRUE, family='mono',
+                                                  linetype = "dotted", linesize = .7, alpha = 0.3)
 
 plot_path <- paste("data/",project,"/plots/",project,"_CorA_unclustered_branchlengths.png", sep = "")
 ggsave(plot_path, plot = p2_nonclustered, width = 6, height = 6)
