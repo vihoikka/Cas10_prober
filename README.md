@@ -1,5 +1,5 @@
 # Cas10_prober
-Snakemake pipeline for characterizing type III CRISPR-Cas loci and related CorAs. Generates phylogenetic trees with annotations. Chi et al. 2023, manuscript submitted.
+Snakemake pipeline for characterizing type III CRISPR-Cas loci and related CorAs. Generates phylogenetic trees with annotations. Chi et al. 2023 (DOI: [https://doi.org/10.1038/s41586-023-06620-5]([url](https://doi.org/10.1038/s41586-023-06620-5)))
 
 ## Requirements
 - You need to have [Snakemake]([url](https://anaconda.org/bioconda/snakemake)), [Conda]([url](https://docs.conda.io/en/latest/index.html)) and [Hmmer]([url](https://anaconda.org/bioconda/hmmer)) installed. Other dependencies are installed automatically by the pipeline.
@@ -8,11 +8,18 @@ Snakemake pipeline for characterizing type III CRISPR-Cas loci and related CorAs
 
 ## How to run
 1. Clone the repository
-2. HMM profiles and related protein alignments are provided in the msa_050523 -folder. Use Hmmer to hmmpress the HMM database (```hmmpress 050523.hmm```) and modify paths in the pipeline to point to the database. Also modify the hmm_msa_folder variable in the script to point to the directory with the alignments.
-3. Point the genomes_folder to the root of your downloaded genomes
-4. Run using the following command
+2. HMM profiles and related protein alignments are provided in the msa_050523 -folder. Use Hmmer to hmmpress the HMM databases:
+- (```hmmpress effectors_050523.hmm```)
+- (```hmmpress all_cas10s.hmm```)
+  and modify paths (anything starting with "/media/volume/") to point to the databases. Also modify the hmm_msa_folder variable in the script to point to the directory with the alignments.
+4. Point the genomes_folder to the root of your downloaded genomes
+5. Run using the following command, adjusing core count to your needs:
 
 ```
 snakemake --snakefile cas10_prober.smk --use-conda --cores 40 --config protein_clustering="False" getGenomesBy="local" genome_mode="all" cas10_anchor="True" --rerun-triggers mtime
 ```
+
+
+If you have trouble, please raise an issue at Github!
+
 
