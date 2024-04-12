@@ -575,6 +575,7 @@ checkpoint type_iii_wildcarder:
     params:
         interference_cutoff = crispr_locus_interference_cutoff, #0-100. If the interference score is lower than this, the locus is discarded
         cctyper_folder = base_path + "/07_cctyper",
+    conda: "envs/pandas.yaml"
     shell:
         '''
         python3 scripts/loci_wildcarder.py --input_folder {params.cctyper_folder} --output_folder {output} --interference_cutoff {params.interference_cutoff} --tax_info {input.tax_info}
