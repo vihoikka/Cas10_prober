@@ -9,8 +9,8 @@ Snakemake pipeline for characterizing type III CRISPR-Cas loci and related CorAs
 ## How to run
 1. Clone the repository
 2. HMM profiles and related protein alignments are provided in the msa_050523 -folder. Use Hmmer to hmmpress the HMM databases:
-- (```hmmpress effectors_050523.hmm```)
-- (```hmmpress all_cas10s.hmm```)
+- ```hmmpress effectors_050523.hmm```
+- ```hmmpress all_cas10s.hmm```
 
 and modify paths (anything starting with "/media/volume/") to point to the databases. Also modify the hmm_msa_folder variable in the script to point to the directory with the alignments.
 
