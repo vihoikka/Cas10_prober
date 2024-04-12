@@ -418,6 +418,7 @@ if cas10_anchor == True: #if we filter analyzable genomes by the presence of Cas
         params:
             clusterlines = base_path + "/064_cas10_clusters/clusterlines.txt"
         threads: 40
+        conda: "envs/trees.yaml
         shell:
             '''
             echo "concatenating cas10 sequences for clustering"
