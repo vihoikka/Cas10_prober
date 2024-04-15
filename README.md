@@ -5,6 +5,7 @@ Snakemake pipeline for characterizing type III CRISPR-Cas loci and related CorAs
 - You need to have [Snakemake]([url](https://anaconda.org/bioconda/snakemake)), [Conda]([url](https://docs.conda.io/en/latest/index.html)) and [Hmmer]([url](https://anaconda.org/bioconda/hmmer)) installed. Other dependencies are installed automatically by the pipeline.
 - Runs on Unix environments. Tested only on Ubuntu
 - Data: you need a local database of genomes. You can use [NCBI Datasets command line tool](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/download-and-install/?utm_source=ncbi_insights&utm_medium=referral&utm_campaign=datasets-command-line-20221012) to download the genomes. Use the command ```datasets download genome taxon 2 --annotated --assembly-level complete --include genome,protein,gff3```
+- May not work on Python 3.12 (tested with 3.9)
 
 ## How to run
 1. Clone the repository
