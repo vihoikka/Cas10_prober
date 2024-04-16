@@ -964,8 +964,8 @@ rule final:
         catyper = rules.concatenate_cATyper_hmm.output,
         tree_CorA = rules.CorA_tree.output,
         tree_CorA_unclustered = rules.CorA_tree_unclustered.output,
-        unknowns = rules.concatenate_unknowns.output.proteins,
-        clustered_unknowns = rules.cluster_unknowns.output,
+        #unknowns = rules.concatenate_unknowns.output.proteins,
+        #clustered_unknowns = rules.cluster_unknowns.output,
     output: base_path + "/done"
     shell:
         '''
