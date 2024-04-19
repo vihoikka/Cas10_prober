@@ -1,11 +1,12 @@
 '''
-Snakemake pipeline for Cas10 and CorA extraction and aligments (Haotian et al. 2023, submitted).
+Snakemake pipeline for Cas10 and CorA extraction and aligments (Haotian et al. 2023, NAR).
 Actual trees with annotations are produced by the R script "tree.R" in the scripts folder.
 '''
 
 project = "run1"
 
 base_path = "/media/volume/st_andrews/cas10_corA_2" + "/" + project
+genomes_folder = "/media/volume/st_andrews/cas10_corA/genomes/bacteria/ncbi_dataset/data"
 
 cas10_cluster_threshold = 0.90 #initial Cas10 clustering threshold
 crispr_locus_interference_cutoff = 20 #cutoff for CRISPR loci interference completeness. Loci with less than this percentage of interference genes present are discarded
@@ -195,7 +196,6 @@ rule all:
     input: base_path + "/done"
 
 
-genomes_folder = "/media/volume/st_andrews/cas10_corA/genomes/bacteria/ncbi_dataset/data"
 genome_count = 51920
 subsampling_seed = 666
 
@@ -693,71 +693,6 @@ rule typeIII_characterizer:
         touch {output.CorA_fasta}
         '''
 
-rule unknown_finder:
-    '''
-    Probes the CCTyper outputs for unknown genes and/or genes with low E-values in the HMM search.
-    The info file contains the following columns:
-        - locus_id
-        - protein id
-        - protein length
-        - protein sequence
-        - presence of CARF/SAVED domain
-        - presence of HEPN domain
-        - transmembrane properties
-    '''
-    input:
-        cctyper = base_path + "/071_cctyper_loci/{c}/cas_operons.tsv",
-        hmm = rules.cATyper_hmm.output.temp_rows
-    output:
-        unknown_proteins = base_path + "/30_unknown_effectors/{c}/{c}_unknown_proteins.faa",
-        info = base_path + "/30_unknown_effectors/{c}/{c}_unknown_proteins_info.tsv"
-    params:
-        outputfolder = base_path + "/30_unknown_effectors/{c}",
-        host_genomes_folder = base_path + "/06_host_genomes",
-        cctyper_folder = base_path + "/07_cctyper",
-        sample_folder = base_path + "/06_host_genomes/", #this is used to find the gff and proteins files that are strain-, not locus-specific
-    conda: "envs/gff_utils.yaml"
-    log:
-        out = base_path + "/30_unknown_effectors/logs/{c}.out",
-        err = base_path + "/30_unknown_effectors/logs/{c}.err"
-    shell:
-        '''
-        python3 scripts/unknown_finder.py --locus_id {wildcards.c} --cctyper {input.cctyper} --hmm {input.hmm} --outputfolder {params.outputfolder} --info_out {output.info} --unknown_proteins_output {output.unknown_proteins} --host_genomes_folder {params.host_genomes_folder} --cctyper_path {params.cctyper_folder} --sample_folder {params.sample_folder}  2> {log.err} 1> {log.out}
-        touch {output.unknown_proteins}
-        touch {output.info}
-        '''
-
-rule concatenate_unknowns:
-    input: aggregate_unknowns
-    output:
-        proteins = base_path + "/30_unknown_effectors/unknowns.faa",
-        info = base_path + "/30_unknown_effectors/unknowns_info.tsv"
-    shell:
-        '''
-        find '{base_path}/30_unknown_effectors' -maxdepth 2 -type f -wholename '*/*_unknown_proteins.faa' -print0 | xargs -0 cat >> {output.proteins}
-        echo "locus_id\tsample\tsequence\tlength\tevalue\tposition\tid\tcctyper" > {output.info}
-        find '{base_path}/30_unknown_effectors' -maxdepth 2 -type f -wholename '*/*_unknown_proteins_info.tsv' -print0 | xargs -0 cat >> {output.info}
-        
-        '''
-
-rule cluster_unknowns:
-    '''
-    '''
-    input: rules.concatenate_unknowns.output.proteins
-    output:
-        proteins = base_path + "/31_unknowns_cluster/unknowns_cluster.faa",
-        clusterinfo = base_path + "/31_unknowns_cluster/unknowns_cluster.faa.clstr",
-    conda: "envs/trees.yaml"
-    log:
-        out = base_path + "/31_unknowns_cluster/logs/unknowns_cluster.out",
-        err = base_path + "/31_unknowns_cluster/logs/unknowns_cluster.err"
-    threads: 40
-    shell:
-        '''
-        cd-hit -i {input} -o {output.proteins} -c 0.90 -n 5 -d 0 -M 16000 -T {threads}
-        '''
-
-
 rule concatenate_type_iii_info:
     input: aggregate_typeIII_info
     output: base_path + "/09_crispr_iii_CorA/loci/type_iii_info.tsv"
@@ -766,8 +701,6 @@ rule concatenate_type_iii_info:
         echo "Cas10\tCas5\tCas7\tCorA\tLocus\tSample\tCas10_GGDD\tCas10_GGDD_seq\tUnknown_genes\tSubtype" > {output}
         find '{base_path}/09_crispr_iii_CorA/loci' -maxdepth 2 -type f -wholename '*/*_crispr_iii_info.tsv' -print0 | xargs -0 cat >> {output}
         '''
-
-#rule 
 
 #a rule that uses the output file cora_type_iii_info from the rule above filter samples with CorA and further divide them into CRISPR-Cas subtypes
 rule cora_plot_extractor:
@@ -804,14 +737,6 @@ rule cora_plot_extractor:
         #create the done.done file to indicate that the rule has finished running
         open(output.done, "w").close()
 
-
-# rule CorA_concatenate:
-#     input: aggregate_CorA_sequences
-#     output: base_path + "/09_crispr_iii_CorA/CorAs.faa"
-#     shell:
-#         '''
-#         cat {input} > {output} 
-#         '''
 
 rule CorA_concatenate:
     '''
@@ -964,8 +889,6 @@ rule final:
         catyper = rules.concatenate_cATyper_hmm.output,
         tree_CorA = rules.CorA_tree.output,
         tree_CorA_unclustered = rules.CorA_tree_unclustered.output,
-        #unknowns = rules.concatenate_unknowns.output.proteins,
-        #clustered_unknowns = rules.cluster_unknowns.output,
     output: base_path + "/done"
     shell:
         '''
